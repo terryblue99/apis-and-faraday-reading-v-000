@@ -22,7 +22,7 @@ class SearchesController < ApplicationController
 
     rescue Faraday::ConnectionFailed
       @error = "There was a timeout. Please try again."
-    end
+    # end
     render 'search'
   end
 
