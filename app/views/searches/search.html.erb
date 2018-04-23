@@ -9,12 +9,12 @@
     <p><%= @error %></p>
   <% elsif @venues %>
     <ul>
-    <% @venues.each do |venue| %>
-      <li>
-        <%= venue["name"] %><br>
-        <%= venue["location"]["address"] %><br>
-        Checkins: <%= venue["stats"]["checkinsCount"] %>
-      </li>
-    <% end %>
+      <% @venues.each do |venue| %>
+        <li>
+          <%= venue["name"] %><br>
+          <%= venue["location"]["address"] %><br>
+          Checkins: <%= venue["stats"]["checkinsCount"] %>
+        </li>
+      <% end %>
     </ul>
 </div>
