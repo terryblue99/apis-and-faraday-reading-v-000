@@ -10,7 +10,7 @@ class SearchesController < ApplicationController
       req.params['v'] = '20180423'
       req.params['near'] = params[:zipcode]
       req.params['query'] = 'coffee shop'
-      # req.options.timeout = 0
+      req.options.timeout = 0
     end
 
     body = JSON.parse(@resp.body)
