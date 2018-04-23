@@ -13,7 +13,6 @@ class SearchesController < ApplicationController
         req.params['query'] = 'coffee shop'
         req.options.timeout = 0
       end
-
       body = JSON.parse(@resp.body)
       if @resp.success?
         @venues = body["response"]["venues"]
