@@ -22,7 +22,7 @@ class SearchesController < ApplicationController
     else
       @error = body["meta"]["errorDetail"]
     end
-    
+
     render'search'
   end
 
