@@ -17,9 +17,6 @@ class SearchesController < ApplicationController
       @venues = body["response"]["venues"]
     else
       @error = body["meta"]["errorDetail"]
-      rescue Faraday::TimeoutError
-        @error = "There was a timeout. Please try again."
-      end
     end
 
     render'search'
